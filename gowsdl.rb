@@ -5,6 +5,7 @@ class Gowsdl < Formula
   homepage 'https://github.com/hooklift/gowsdl'
   url 'https://github.com/hooklift/gowsdl/archive/v0.2.1.tar.gz'
   sha256 'd2c6ef8a6ee5b78d9753d4a4e6ffd06c23324a4eb9de0d778ab7fc50ea6b9902'
+  head 'https://github.com/hooklift/gowsdl.git'
 
   depends_on 'go' => :build
 
