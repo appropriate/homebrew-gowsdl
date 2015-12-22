@@ -15,7 +15,8 @@ class Gowsdl < Formula
     ENV['GOPATH'] = buildpath
     Language::Go.stage_deps resources, buildpath/'src'
 
-    system "go", "build", "-o", bin/"gowsdl", "cmd/gowsdl/main.go"
+    system "make", "build"
+    bin.install 'build/gowsdl'
   end
 
   test do
